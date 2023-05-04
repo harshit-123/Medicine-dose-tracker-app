@@ -1,0 +1,140 @@
+{% extends 'base.html' %}
+{% block title %}Register{% endblock title %}
+{% block body %}
+    <div class="container mx-auto">
+        <form action="" method="POST" class="mt-4 mx-auto">
+            <h3 class="text-center">Registration Form</h3>
+            <div class="row mt-3">
+                <div class="col-md-4">
+                    <label for="fname" class="form-label">First Name</label>
+                    <input type="text" class="form-control" id="fname" name = "fname" placeholder="Enter Your First Name">
+                </div>
+                <div class="col-md-4">
+                    <label for="lname" class="form-label">Last Name</label>
+                    <input type="text" class="form-control" id="lname" name = "lname" placeholder="Enter Your Last Name">
+                </div>
+                <div class="col-md-4">
+                    <label for="phone" class="form-label">Mobile No.</label>
+                    <input type="text" class="form-control" id="phone" name = "phone" placeholder="Enter Your mobile Number">
+                </div>
+            </div>
+            <div class="row mt-3">
+                <div class="col-md-4">
+                    <label for="email" class="form-label">Email</label>
+                    <input type="email" class="form-control" id="email" name = "email" placeholder="Enter Your Email Address">
+                </div>
+                <div class="col-md-4">
+                    <label for="pass" class="form-label">Password</label>
+                    <input type="password" class="form-control" id="pass" name = "pass" placeholder="Enter Your Password">
+                </div>
+                <div class="col-md-4">
+                    <label for="cpass" class="form-label">Confirm Password</label>
+                    <input type="password" class="form-control" id="cpass" name = "cpass" placeholder="Enter Your Password">
+                </div>
+            </div>
+            <div class="row mt-3">
+                <div class="col-md-4">
+                    <label for="email" class="form-label">Gender</label>
+                    <div class="form-check">
+                        <input class="form-check-input" type="radio" name="gender" id="gender">
+                        <label class="form-check-label" for="male">
+                          Male
+                        </label>
+                      </div>
+                      <div class="form-check">
+                        <input class="form-check-input" type="radio" name="gender" id="gender">
+                        <label class="form-check-label" for="female">
+                          Female
+                        </label>
+                      </div>
+                </div>
+                <div class="col-md-4">
+                    <label for="pass" class="form-label">State</label>
+                    <input type="text" class="form-control" id="state" name = "state">
+                </div>
+                <div class="col-md-4">
+                    <label for="country" class="form-label">Country</label>
+                    <input type="text" class="form-control" id="country" name = "country">
+                </div>
+            </div>
+            <hr>
+            <h4>Medication History</h4>
+            <span>Kindly check tick mark if you suffer form below</span>
+            <div class="row mt-4">
+                <div class="form-check">
+                    <input class="form-check-input" type="checkbox" value="" id="Cholesterol">
+                    <label class="form-check-label" for="Cholesterol">
+                        High Cholesterol
+                    </label>
+                  </div>
+                  <div class="form-check">
+                    <input class="form-check-input" type="checkbox" value="" id="HBP" >
+                    <label class="form-check-label" for="HBP">
+                        High Blood Pressure
+                    </label>
+                  </div>
+                  <div class="form-check">
+                    <input class="form-check-input" type="checkbox" value="" id="Diabetes" >
+                    <label class="form-check-label" for="Diabetes">
+                        Diabetes
+                    </label>
+                  </div>
+                  <div class="form-check">
+                    <input class="form-check-input" type="checkbox" value="" id="Asthma" >
+                    <label class="form-check-label" for="Asthma">
+                        Asthma or Chronic Lung Disease
+                    </label>
+                  </div>
+                  <div class="form-check">
+                    <input class="form-check-input" type="checkbox" value="" id="Osteoporosis" >
+                    <label class="form-check-label" for="Osteoporosis">
+                        Osteoporosis/Bone Fractures
+                    </label>
+                  </div>
+                  <div class="form-check">
+                    <input class="form-check-input" type="checkbox" value="" id="Arthritis" >
+                    <label class="form-check-label" for="Arthritis">
+                        Arthritis, Gout or Joint Injuries
+                    </label>
+                  </div>
+                  <div class="form-check">
+                    <input class="form-check-input" type="checkbox" value="" id="HA" >
+                    <label class="form-check-label" for="HA">
+                        Heart Attack/Heart Disease/Heart Failure
+                    </label>
+                  </div>
+                  <div class="form-check">
+                    <input class="form-check-input" type="checkbox" value="" id="BS" >
+                    <label class="form-check-label" for="BS">
+                        Blood Sugar
+                    </label>
+                  </div>
+                  <div class="form-check">
+                    <input class="form-check-input" type="checkbox" value="" id="Hemoglobin" >
+                    <label class="form-check-label" for="Hemoglobin">
+                        Hemoglobin (Hb1ac)
+                    </label>
+                  </div>
+                  <div class="form-check">
+                    <input class="form-check-input" type="checkbox" value="" id="Cancer" >
+                    <label class="form-check-label" for="Cancer">
+                        Cancer
+                    </label>
+                  </div>
+                  <div class="form-check">
+                    <input class="form-check-input" type="checkbox" value="" id="Breast" >
+                    <label class="form-check-label" for="Breast">
+                        Breast/ Colon/Bowel/Prostrate/Lung
+                    </label>
+                  </div>
+                  <div class="form-check">
+                    <input class="form-check-input" type="checkbox" value="" id="other" >
+                    <label class="form-check-label" for="other">
+                        Other
+                    </label>
+                  </div>
+            </div>
+            <button class="btn btn-primary mt-4">Submit</button>
+        </form>
+    </div>
+{% endblock body %}
